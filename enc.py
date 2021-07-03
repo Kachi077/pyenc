@@ -1,35 +1,32 @@
- # -*- coding: utf-8
- # open source don't forget to give a star
- # angga Kurniawan (fb.me/onyedikachi.okoro.3760)
- import os,sys,time
- from platform import system
+# -*- coding: utf-8
+# open source jangan lupa kasih bintang ajg
+# angga kurniawan (fb.me/gaaaarzxd)
+import os,sys,time
+from platform import system
 
- logo = """     \033[0;91m██████  ██    ██ ███████ ███    ██  ██████ 
+logo = """     \033[0;91m██████  ██    ██ ███████ ███    ██  ██████ 
      \033[0;91m██   ██  ██  ██  ██      ████   ██ ██      
      \033[0;91m██████    ████   █████   ██ ██  ██ ██      
      \033[0;97m██         ██    ██      ██  ██ ██ ██      
      \033[0;97m██         ██    ███████ ██   ████  ██████ 
  ---------------------------------------------------
- ➣ Author    : KACHI
- ➣ GitHub    : https://github.com/Kachilee1
+ ➣ Author    : Angga Kurniawan
+ ➣ GitHub    : https://github.com/anggaxd
  ---------------------------------------------------
- ➣ Instagram : @kachilee1
- ➣ Facebook  : https://fb.me/onyedikachi.okoro.3760\n"""
+ ➣ Instagram : @gaaarzxd
+ ➣ Facebook  : https://fb.me/gaaaarzxd\n"""
 
- defmenu():
- os.system("clear")
- print logo
- print "[!] Enter the file name without .py"
- print "[*] Example: pyenc.py (insert file: pyenc)"
- name_files = raw_input(" [+] Input File : ")
- sv_file = raw_input(" [+] Save File : ")
- py_datt = (str(name_files)+".pyo")
- print " [#] Encrypt the SC soon..."
- time.sleep(1)
- os.system('python2 -OO -m py_compile ' + name_files+'.py')
- os.system("mv "+str(py_datt)+" "+str(sv_file)+".py")
- print "[*] Ok Encrypted"
- print " [+] Filename : "+str(sv_file)+".py"
-
- if __name__ == '__main__':
- menu()
+def menu():
+	os.system("clear")
+	print logo
+	print " [!] Masukan Nama File Nya Ajah Tanpa .py" 
+	print " [*] Contoh : pyenc.py (masukan filenya : pyenc)" 
+	name_files = raw_input(" [+] Masukan File : ")
+	sv_file = raw_input(" [+] Simpan File : ")
+	py_datt = (str(name_files)+".pyo")
+	print " [#] Bentar Lagi Encrypt SC Nya...."
+	time.sleep(1)
+	os.system('python2 -OO -m py_compile ' + name_files+'.py')
+	os.system("mv "+str(py_datt)+" "+str(sv_file)+".py")
+	print " [*] Oke Sudah Di Encrypt"
+	print " [+] Nama File : "+str(sv_file)+".py"
